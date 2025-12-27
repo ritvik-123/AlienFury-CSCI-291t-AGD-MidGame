@@ -1,0 +1,65 @@
+READ ME - Alien Fury
+
+Game Concept:
+A 3D endless runner where the player character runs in place while obstacles approach. The parallax background moves opposite to the running direction to create movement illusion. The game includes 3 Levels, where the player has to avoid 6 collisions in each level to reach the next level.
+
+Implemented Requirements:
+
+1. 3D Model & Animations:
+   - Loaded MD2 model with run and jump animations
+   - Run animation plays continuously
+   - Jump animation triggers on UP key press
+
+2. Parallax System:
+   - Multi-layer parallax background
+   - Moves opposite to player's running direction
+   - Different speeds for depth illusion
+
+3. Obstacle System:
+   - Randomly generated 3D objects (spheres)
+   - Move towards player at increasing speed
+   - Disappear on collision or when avoided
+   - Collision detection using distance checks
+
+4. Game Progression:
+   - 3 levels with increasing difficulty
+   - Level completes after avoiding 6 objects
+   - Visual and audio feedback for collisions
+
+5. UI System:
+   - Landing page with game title
+   - Main menu (New Game, Help, Exit)
+   - Pause menu during gameplay
+   - Help page with instructions
+   - Exit confirmation dialog
+
+Technical Approach:
+
+- Used OpenGL for 3D rendering
+- Implemented MD2 model loader for character
+- Created texture-based parallax backgrounds
+- Timer-based obstacle spawning system
+- State machine for game flow control
+- Sound effects for key actions
+- Collision detection via radius checks
+
+Controls:
+- UP: Jump
+- RIGHT: Moves towards right
+- P: Pause game
+	- R: Resume
+	- M: Main Menu
+	- E: Exit Window
+- ESC: exit game abruptly
+
+Assets Used:
+- 3D character model (MD2 format)
+- Multiple background textures
+- spheres with texture for obstacles
+- Sound effects for jump/collision
+- Background music
+
+Development Notes:
+- Focused on smooth animation transitions
+- No difficulty progression, visual differences only
+- Implemented responsive controls
